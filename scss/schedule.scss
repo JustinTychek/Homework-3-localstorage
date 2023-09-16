@@ -1,0 +1,154 @@
+body {
+  background-color: rgb(138, 144, 183);
+  nav {
+    height: 80px;
+    background-color: #7a6263;
+
+    .links {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 35px;
+    height: 100vh;
+    background-color: rgb(138, 144, 183);
+    .form {
+      width: 45%;
+      height: 650px;
+      padding: 30px 30px 0px 30px;
+      display: flex;
+      flex-direction: column;
+      border: 4px solid white;
+
+      h2 {
+        // color: rgb(194, 228, 255);
+        color: white;
+        margin-bottom: 30px;
+      }
+
+      input {
+        background-color: transparent;
+        border: 3px solid white;
+        margin-bottom: 35px;
+        height: 40px;
+        padding-left: 7px;
+        font-size: 20px;
+        color: white;
+      }
+
+      #submit {
+        background-color: #7a6263;
+        height: 50px;
+        // color: rgb(138, 144, 183);
+        color: white;
+        margin-top: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+      }
+    }
+
+    .display {
+      width: 45%;
+      // margin-top: 55px;
+      button {
+        height: 50px;
+        width: 300px;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        border: none;
+        background-color: #7a6263;
+        color: white;
+        font-weight: bold;
+      }
+      #app {
+        p {
+          font-size: 20px;
+          margin-bottom: 25px;
+        }
+        .person {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1105px) {
+  body {
+    nav {
+      .links {
+        width: 65%;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+
+      .form {
+        width: 75%;
+      }
+
+      .display {
+        width: 75%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 665px) {
+  body {
+    nav {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      .links {
+        width: 80%;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+
+      .form {
+        width: 95%;
+        input {
+          font-size: 14px;
+        }
+      }
+
+      .display {
+        width: 95%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

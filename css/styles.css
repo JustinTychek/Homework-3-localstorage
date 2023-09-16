@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+body {
+  background-color: rgb(138, 144, 183);
+}
+body nav {
+  height: 80px;
+  background-color: #7a6263;
+}
+body nav .links {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body nav .links a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+body .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  padding-top: 35px;
+  height: 100vh;
+  background-color: rgb(138, 144, 183);
+}
+body .content .form {
+  width: 45%;
+  height: 650px;
+  padding: 30px 30px 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 4px solid white;
+}
+body .content .form h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+body .content .form input {
+  background-color: transparent;
+  border: 3px solid white;
+  margin-bottom: 35px;
+  height: 40px;
+  padding-left: 7px;
+  font-size: 20px;
+  color: white;
+}
+body .content .form #submit {
+  background-color: #7a6263;
+  height: 50px;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
+body .content .display {
+  width: 45%;
+}
+body .content .display button {
+  height: 50px;
+  width: 300px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border: none;
+  background-color: #7a6263;
+  color: white;
+  font-weight: bold;
+}
+body .content .display #app p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+body .content .display #app .person {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1105px) {
+  body nav .links {
+    width: 65%;
+  }
+  body .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  body .content .form {
+    width: 75%;
+  }
+  body .content .display {
+    width: 75%;
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 665px) {
+  body nav {
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body nav .links {
+    width: 80%;
+  }
+  body nav .links a {
+    font-size: 16px;
+  }
+  body .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  body .content .form {
+    width: 95%;
+  }
+  body .content .form input {
+    font-size: 14px;
+  }
+  body .content .display {
+    width: 95%;
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
